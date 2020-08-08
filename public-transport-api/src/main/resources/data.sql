@@ -10,7 +10,7 @@ CREATE TABLE BUS(
 insert into BUS(BUS_ID,BusNumber,Capacity,FuelConsumption,CurrentPassengerCount) values(1,'287A',100,70,55); 
 insert into BUS(BUS_ID,BusNumber,Capacity,FuelConsumption,CurrentPassengerCount) values(2,'287B',100,30,40); 
 insert into BUS(BUS_ID,BusNumber,Capacity,FuelConsumption,CurrentPassengerCount) values(3,'244C',100,50,90); 
-insert into BUS(BUS_ID,BusNumber,Capacity,FuelConsumption,CurrentPassengerCount) values(4,244K',100,100,20); 
+insert into BUS(BUS_ID,BusNumber,Capacity,FuelConsumption,CurrentPassengerCount) values(4,'244K',100,100,20); 
 
 
 DROP TABLE IF EXISTS MAINTANANCE;
