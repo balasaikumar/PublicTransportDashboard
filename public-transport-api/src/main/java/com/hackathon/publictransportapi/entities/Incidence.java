@@ -21,9 +21,7 @@ public class Incidence {
 
 	@Column(name="LastIncident")
 	private Date lastIncident;
-
-	@Column(name="MAINTENANCE_ID")
-	private Double fuelConsumption;
+	
 
 	public long getMaintenanceId() {
 		return maintenanceId;
@@ -57,14 +55,6 @@ public class Incidence {
 		this.lastIncident = lastIncident;
 	}
 
-	public Double getFuelConsumption() {
-		return fuelConsumption;
-	}
 
-	public void setFuelConsumption(Double fuelConsumption) {
-		this.fuelConsumption = fuelConsumption;
-	}
-	
-	
 	
 }
