@@ -1,5 +1,66 @@
 package com.hackathon.publictransportapi.entities;
 
+import java.util.Date;
+
+@Entity(name="Incidence")
 public class Incidence {
 
+	
+	@Column(name="INCIDENT_ID")
+	private long maintenanceId;
+
+	@Column(name="BUS_ID")
+	private long busId ;
+
+	@Column(name="IncidentMessage")
+	private String incidentMessage;
+
+	@Column(name="LastIncident")
+	private Date lastIncident;
+
+	@Column(name="MAINTENANCE_ID")
+	private Double fuelConsumption;
+
+	public long getMaintenanceId() {
+		return maintenanceId;
+	}
+
+	public void setMaintenanceId(long maintenanceId) {
+		this.maintenanceId = maintenanceId;
+	}
+
+	public long getBusId() {
+		return busId;
+	}
+
+	public void setBusId(long busId) {
+		this.busId = busId;
+	}
+
+	public String getIncidentMessage() {
+		return incidentMessage;
+	}
+
+	public void setIncidentMessage(String incidentMessage) {
+		this.incidentMessage = incidentMessage;
+	}
+
+	public Date getLastIncident() {
+		return lastIncident;
+	}
+
+	public void setLastIncident(Date lastIncident) {
+		this.lastIncident = lastIncident;
+	}
+
+	public Double getFuelConsumption() {
+		return fuelConsumption;
+	}
+
+	public void setFuelConsumption(Double fuelConsumption) {
+		this.fuelConsumption = fuelConsumption;
+	}
+	
+	
+	
 }

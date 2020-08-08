@@ -22,10 +22,10 @@ CREATE TABLE MAINTANANCE (
   LastMaintanace TIMESTAMP
 );
 
-insert into MAINTANANCE(BUS_ID,BUS_ID,MaintananceTime,LastMaintanace) values(11,1,"10-05-2020");  
-insert into MAINTANANCE(BUS_ID,BUS_ID,MaintananceTime,LastMaintanace) values(12,2,"10-06-2020");  
-insert into MAINTANANCE(BUS_ID,BUS_ID,MaintananceTime,LastMaintanace) values(13,3,"10-07-2020");  
-insert into MAINTANANCE(BUS_ID,BUS_ID,MaintananceTime,LastMaintanace) values(14,4,"05-08-2020");  
+insert into MAINTANANCE(MAINTENANCE_ID,BUS_ID,MaintananceTime,LastMaintanace) values(11,1,"10-05-2020");  
+insert into MAINTANANCE(MAINTENANCE_ID,BUS_ID,MaintananceTime,LastMaintanace) values(12,2,"10-06-2020");  
+insert into MAINTANANCE(MAINTENANCE_ID,BUS_ID,MaintananceTime,LastMaintanace) values(13,3,"10-07-2020");  
+insert into MAINTANANCE(MAINTENANCE_ID,BUS_ID,MaintananceTime,LastMaintanace) values(14,4,"05-08-2020");  
 
 DROP TABLE IF EXISTS INCIDENT;
 
