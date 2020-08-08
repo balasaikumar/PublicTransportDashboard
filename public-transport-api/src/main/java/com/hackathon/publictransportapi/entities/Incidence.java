@@ -2,10 +2,14 @@ package com.hackathon.publictransportapi.entities;
 
 import java.util.Date;
 
-@Entity(name="Incidence")
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity(name="INCIDENCE")
 public class Incidence {
 
-	
+	@Id
 	@Column(name="INCIDENT_ID")
 	private long maintenanceId;
 

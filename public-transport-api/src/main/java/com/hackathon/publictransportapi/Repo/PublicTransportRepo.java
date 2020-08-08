@@ -1,5 +1,11 @@
 package com.hackathon.publictransportapi.Repo;
 
-public interface PublicTransportRepo {
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.hackathon.publictransportapi.entities.Bus;
+
+
+public interface PublicTransportRepo extends JpaRepository<Bus,Long>{
 
 }

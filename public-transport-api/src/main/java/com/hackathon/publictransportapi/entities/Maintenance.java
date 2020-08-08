@@ -2,9 +2,14 @@ package com.hackathon.publictransportapi.entities;
 
 import java.util.Date;
 
-@Entity(name="MAINTENENACE")
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity(name="MAINTENANCE")
 public class Maintenance {
 
+	@Id
 	@Column(name="MAINTENANCE_ID")
 	private long maintenanceId;
 
@@ -49,14 +54,6 @@ public class Maintenance {
 		this.lastMaintenance = lastMaintenance;
 	}
 
-	public Double getFuelConsumption() {
-		return fuelConsumption;
-	}
-
-	public void setFuelConsumption(Double fuelConsumption) {
-		this.fuelConsumption = fuelConsumption;
-	}
-	
 	
 	
 }

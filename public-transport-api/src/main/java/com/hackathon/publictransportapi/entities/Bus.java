@@ -1,24 +1,37 @@
 package com.hackathon.publictransportapi.entities;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 @Entity(name="BUS")
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class Bus {
 
 	@Id
-	@Column(name="BUS_ID")
+	@Column(name="busId")
 	private long busId;
 
-	@Column(name="BusNumber")
+	@Column(name="busNumber")
 	private String busNumber;
 
-	@Column(name="Capacity")
+	@Column(name="capacity")
 	private Integer capacity;
 
-	@Column(name="CurrentPassengerCount")
+	@Column(name="fuelConsumption")
+	private Integer fuelConsumption;
+
+	@Column(name="currentPassengerCount")
 	private Integer currentPassengerCount;
-
-	@Column(name="FuelConsumption")
-	private Double fuelConsumption;
-
+	
 	public long getBusId() {
 		return busId;
 	}
@@ -43,6 +56,14 @@ public class Bus {
 		this.capacity = capacity;
 	}
 
+	public Integer getFuelConsumption() {
+		return fuelConsumption;
+	}
+
+	public void setFuelConsumption(Integer fuelConsumption) {
+		this.fuelConsumption = fuelConsumption;
+	}
+
 	public Integer getCurrentPassengerCount() {
 		return currentPassengerCount;
 	}
@@ -51,12 +72,6 @@ public class Bus {
 		this.currentPassengerCount = currentPassengerCount;
 	}
 
-	public Double getFuelConsumption() {
-		return fuelConsumption;
-	}
-
-	public void setFuelConsumption(Double fuelConsumption) {
-		this.fuelConsumption = fuelConsumption;
-	}
+	
 	
 }
